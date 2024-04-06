@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "outland"
+version = "0.1.0"
+description = "A survival horror MUD fueled by Evennia"
+authors = ["biibirll <gabriel.bonagio16@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/biibirll/outland"
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.10"
+evennia = "^4.1.0"
+ipython = "^8.23.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

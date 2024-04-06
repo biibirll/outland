@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  evennia:
+    image: evennia/evennia:latest
+    volumes: 
+      - ./game:/usr/src/game
+    ports:
+      - 4000:4000
+      - 4001:4001
+      - 4002:4002
+    command: evennia start -l
