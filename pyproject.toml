@@ -5,7 +5,7 @@ description = "A survival horror MUD fueled by Evennia"
 authors = ["biibirll <gabriel.bonagio16@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/biibirll/outland"
-package-mode = true
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
