@@ -1,5 +1,6 @@
 from evennia.commands.default import unloggedin
 from evennia import default_cmds
+from commands.account_commands import AccountLookCommand
 from commands.unloggedin_commands import (
     UnconnectedLoginCommand,
     UnconnectedCreateCommand,
@@ -18,6 +19,7 @@ class AccountCmdSet(default_cmds.AccountCmdSet):
 
     def at_cmdset_creation(self):
         super().at_cmdset_creation()
+        self.add(AccountLookCommand)
 
 
 class UnloggedinCmdSet(default_cmds.UnloggedinCmdSet):
